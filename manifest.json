@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Timer Auto-Start",
+  "version": "1.0",
+  "description": "Automatically starts the built-in LeetCode timer when a problem is opened.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://leetcode.com/problems/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
